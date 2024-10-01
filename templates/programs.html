@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="programs-container">
+    <h2>Our Programs</h2>
+    <div class="program">
+        <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Pregnancy Support">
+        <h3>Pregnancy Support</h3>
+        <p>Free checkups and medical care for women in underprivileged areas.</p>
+    </div>
+    <div class="program">
+        <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Nutrition Program">
+        <h3>Nutrition Program</h3>
+        <p>Distribution of food and supplements to combat child malnutrition.</p>
+    </div>
+    <div class="program">
+        <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Child Care">
+        <h3>Child Care</h3>
+        <p>Health checkups for newborns and young children to ensure they are healthy and growing well.</p>
+    </div>
+</div>
+{% endblock %}
